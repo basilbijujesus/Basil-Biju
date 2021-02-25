@@ -1,0 +1,97 @@
+<html>
+<head>
+<style>
+.box{
+width:400px;
+height:200px;
+position:relative;
+margin:100px500px ;
+background-color:#0aebc5;
+
+
+             }
+.box2{
+
+position:absolute;
+padding-top:50px;
+padding-left:10px;
+             }
+.box3{
+
+position:absolute;
+padding-top:70px;
+padding-left:50px;
+
+
+             }
+
+label{
+font-size:15px;
+font-style:bold;
+font-family:sans-serif;
+             }
+h3{
+
+
+background-color:white;
+margin:30px60px;
+              }
+
+
+input{
+height:30px;
+border:0px ;
+border-radius:5px
+               }
+
+button{
+height:30px;
+background-color:black;
+color: white;border:0px ;
+border-radius:5px
+               }
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<divclass="box">
+
+
+<divclass="box2">
+<label>Enter the number:</label><inputtype="text"id="mytext"type="text"id="mytext">
+<buttononclick="myfunc()">CLICK ME</button>
+</div>
+
+
+<divclass="box3">
+<h3id="para1"></h3>
+</div>
+</div>
+
+</body>
+
+
+<script>
+functionmyfunc(){
+varnumber = document.getElementById("mytext").value;
+varnumberOfDigits = number.length;
+varsum = 0;
+for (i = 0; i<numberOfDigits; i++) {
+sum = sum + Math.pow(number.charAt(i),numberOfDigits);
+            }
+
+if (sum == number) {
+     document.getElementById("para1").innerHTML = number + " is Armstrong Number";
+
+            } else {
+document.getElementById("para1").innerHTML =  number + " is  not an Armstrong Number";
+            }
+
+       }
+</script>
+</html>
