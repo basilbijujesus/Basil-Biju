@@ -1,0 +1,75 @@
+<html>
+<head>
+<style>
+.box{
+
+
+margin:100px500px;
+width:400px;
+height:200px;
+background-color:#eb0c7b;
+position:relative;
+border-radius:10px;
+                }
+.box1{
+
+
+position:absolute;
+padding:50px70px;
+                }
+h2{
+
+
+color:white;
+                }
+input{
+height:30px;
+border:0px ;
+border-radius:5px
+               }
+
+button{
+height:30px;
+background-color:black;
+color: white;border:0px ;
+border-radius:5px
+               }
+
+</style>
+</head>
+
+<body>
+<divclass="box">
+<divclass="box1">
+<inputtype="text"id="num"requiredplaceholder="  Enter the number">
+<buttononclick="visakh();">Click Here</button>
+
+
+<h2></h2>
+
+</div>
+
+</div>
+
+</body>
+<script>
+functionvisakh(){
+vark=document.getElementById("num");
+//alert("Button clicked");
+varnum=k.value;
+//checking whether the input value is a number or not 
+varv=isNaN(num);
+console.log(v);
+if(num&&!v){
+
+
+varres=(num>0)? "positive":"negative";
+varn=document.querySelector("h2");
+n.innerHTML=num+" "+" is a "+" "+res+" "+"number";
+                }
+else
+alert("Please enter a number");
+
+               }
+</script>
+</html>
