@@ -1,0 +1,93 @@
+<html>
+<head>
+<style>
+.box{
+
+
+margin:100px500px;
+width:400px;
+height:200px;
+background-color:#0cadc9;
+position:relative;
+        }
+.box1{
+
+
+position:absolute;
+padding:50px10px;
+        }
+input
+        {
+height:30px;
+border:0px ;
+border-radius:5px
+        }
+
+button
+        {
+height:30px;
+background-color:black;
+color: white;
+border:0px ;
+border-radius:5px
+        }
+</style>
+
+</head>
+
+<body>
+<divclass="box">
+<divclass="box1">
+                     Enter the number:<inputtype="text"id="num"required><buttononclick="visakh();">Click Here</button>
+
+<h3></h3>
+</div>
+
+</div>
+
+</body>
+<script>
+
+
+functionvisakh(){
+vark=document.getElementById("num");
+//alert("Button clicked");
+varnum=k.value;
+//checking whether the input value is a number or not 
+varv=isNaN(num);
+//console.log(v);
+varres; 
+if(num>0&&!v){
+
+
+if(num%3==0&&num%7==0)
+                                    {
+res=num+" "+"is a multiple of 3 and 7";
+                                    }
+elseif(num%3==0)
+                                    {
+if(num%7==0)
+res=num+" "+"is a multiple of 3 and 7"
+else
+res=num+" "+"is a multiple of 3 not a  multiple of 7"
+                                      } 
+elseif(num%7==0)
+                                      {
+
+res=num+" "+"is a multiple of 7 not a  multiple of 3"
+                                      }
+else
+                                      {
+res=num+" "+"is not a multiple of 7 not a  multiple of 3"
+                                      }        
+varn=document.querySelector("h3");
+n.innerHTML=res;
+
+                }
+else
+alert("Please enter a positive number");
+
+              }
+
+</script>
+</html>
